@@ -1,0 +1,26 @@
+$color-main: #FF0000;
+$font-min: 0.625rem;
+
+body{
+    background-color: #EEEEEE;;
+}
+
+a{
+    color: transparent;
+}
+
+.colorprimary{
+    color: $color-main;
+}
+
+.bgred{
+    background-color: $color-main;
+}
+
+.justifytext{
+    text-align: justify;
+}
+
+.fontsmall{
+    font-size: $font-min !important;
+}

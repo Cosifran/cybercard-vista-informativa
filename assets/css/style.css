@@ -1,0 +1,25 @@
+body {
+  background-color: #EEEEEE;
+}
+
+a {
+  color: transparent;
+}
+
+.colorprimary {
+  color: #FF0000;
+}
+
+.bgred {
+  background-color: #FF0000;
+}
+
+.justifytext {
+  text-align: justify;
+}
+
+.fontsmall {
+  font-size: 0.625rem !important;
+}
+
+/*# sourceMappingURL=style.css.map */
