@@ -1,12 +1,18 @@
 $color-main: #FF0000;
-$font-min: 0.625rem;
+$color-sec: #EEEEEE;
+$font-6: 0.625rem;
+$fon-5: 0.875rem;
 
 body{
-    background-color: #EEEEEE;;
+    background-color: #F9F9F9;
 }
 
 a{
-    color: transparent;
+    color: transparent !important;
+}
+
+.bacgroundsecundario{
+    background-color: $color-sec;
 }
 
 .colorprimary{
@@ -14,7 +20,7 @@ a{
 }
 
 .bgred{
-    background-color: $color-main;
+    background-color: $color-main !important;
 }
 
 .justifytext{
@@ -22,5 +28,9 @@ a{
 }
 
 .fontsmall{
-    font-size: $font-min !important;
+    font-size: $font-6 !important;
+}
+
+.fontsnormalsmall{
+    font-size: $fon-5;
 }

@@ -1,9 +1,13 @@
 body {
-  background-color: #EEEEEE;
+  background-color: #F9F9F9;
 }
 
 a {
-  color: transparent;
+  color: transparent !important;
+}
+
+.bacgroundsecundario {
+  background-color: #EEEEEE;
 }
 
 .colorprimary {
@@ -11,7 +15,7 @@ a {
 }
 
 .bgred {
-  background-color: #FF0000;
+  background-color: #FF0000 !important;
 }
 
 .justifytext {
@@ -20,6 +24,10 @@ a {
 
 .fontsmall {
   font-size: 0.625rem !important;
+}
+
+.fontsnormalsmall {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
