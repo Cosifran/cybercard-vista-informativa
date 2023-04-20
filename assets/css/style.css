@@ -2,6 +2,18 @@ body {
   background-color: #F9F9F9;
 }
 
+.bgsecundario {
+  background-color: #F9F9F9;
+}
+
+.grissecundario {
+  color: #6F6F6F;
+}
+
+.grissubtitulos {
+  color: #787878;
+}
+
 a {
   color: transparent !important;
 }

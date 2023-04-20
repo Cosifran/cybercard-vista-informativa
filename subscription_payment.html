@@ -19,8 +19,8 @@
 
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-7">
-                        <div class="row mx-3">
+                    <div class="col-12 col-md-12 col-lg-11 col-xl-10 col-xxl-8" >
+                        <div class="row mx-lg-3">
                             <div class="col-12">
                                 <div class="card rounded-4 bg-white shadow-lg">
                                     <div class="card-body mx-3">
@@ -31,20 +31,20 @@
                                         <div class="row mt-3">
                                             <div class="col-12">
                                                 <div class="row">
-                                                    <div class="col-6">
-                                                        <p><span class="me-2"><i class="fa-solid fa-user"
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="grissecundario"><span class="me-2"><i class="fa-solid fa-user"
                                                                     style="color: #ff0000;"></i></span>Acceso 1 usuario
                                                         </p>
-                                                        <p><span class="me-2"><i class="fa-solid fa-hotel"
+                                                        <p class="grissecundario"><span class="me-2"><i class="fa-solid fa-hotel"
                                                                     style="color: #ff0000;"></i></span> Dcto. en Hoteles
                                                             desde 10% hasta el 20%</p>
-                                                        <p><span class="me-2"><i class="fa-solid fa-briefcase-medical"
+                                                        <p class="grissecundario"><span class="me-2"><i class="fa-solid fa-briefcase-medical"
                                                                     style="color: #ff0000;"></i></span> Dcto. en
                                                             Asistencia desde 15% hasta el 30%</p>
                                                     </div>
 
-                                                    <div class="col-6">
-                                                        <p> <span class="me-2"><svg width="14" height="17"
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="grissecundario"> <span class="me-2"><svg width="14" height="17"
                                                                     viewBox="0 0 14 17" fill="none"
                                                                     xmlns="http://www.w3.org/2000/svg">
                                                                     <g clip-path="url(#clip0_172_1384)">
@@ -62,11 +62,11 @@
                                                                     </defs>
                                                                 </svg>
                                                             </span> Asesor personal de viaje</p>
-                                                        <p><span class="me-2"><i
+                                                        <p class="grissecundario"><span class="me-2"><i
                                                                     class="fa-sharp fa-solid fa-suitcase-rolling"
                                                                     style="color: #ff0000;"></i></span>Dcto. en Paquetes
                                                             desde 10% hasta el 25%</p>
-                                                        <p> <span class="me-2"><svg width="17" height="17"
+                                                        <p class="grissecundario"> <span class="me-2"><svg width="17" height="17"
                                                                     viewBox="0 0 17 17" fill="none"
                                                                     xmlns="http://www.w3.org/2000/svg">
                                                                     <path
@@ -86,15 +86,15 @@
                                                 <div class="row row mt-3">
                                                     <div class="col-12">
                                                         <div class="row">
-                                                            <div class="col-6">
-                                                                <p>
+                                                            <div class="col-7">
+                                                                <p class="grissecundario">
                                                                     Subtotal
                                                                 </p>
-                                                                <p>Cargos</p>
-                                                                <p>Cupón de descuento</p>
+                                                                <p class="grissecundario">Cargos</p>
+                                                                <p class="grissecundario">Cupón de descuento</p>
                                                             </div>
 
-                                                            <div class="col-6 text-end">
+                                                            <div class="col-5 text-end">
                                                                 <p >COP 00.000</p>
                                                                 <p >COP 00.000</p>
                                                                 <p >- COP 00.000</p>
@@ -116,8 +116,7 @@
                                                             </div>
         
                                                             <div class="col-4">
-                                                                <a class="btn bg-primary text-white w-100" href="#" role="button">Aplicar
-                                                                    cupon</a>
+                                                                <a class="btn bgred text-white w-100 fw-bold" href="#" role="button">Aplicar</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -129,11 +128,11 @@
                                                     <div class="col-12">
                                                         <div class="row">
                                                             <div class="col-6">
-                                                                <p> Total a pagar</p>
+                                                                <p class="grissecundario fw-bold pt-1"> Total a pagar</p>
                                                             </div>
     
                                                             <div class="col-6 text-end">
-                                                                <p>COP 000.000</p>
+                                                                <p class="fw-bold fs-4">COP 000.000</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -163,16 +162,60 @@
                                             </div>
                                         </div>
 
-                                        <div class="row">
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <div class="card border-0">
+                                                    <div class="card-body bgsecundario rounded-4">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <label for="inputtarjeta" class="form-label">Numero de tarjeta</label>
+                                                                <input type="number" class="form-control" id="inputtarjeta" placeholder="Ingresa el numero de tarjeta">
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <label for="inputtarjeta" class="form-label">Titular de tarjeta</label>
+                                                                <input type="number" class="form-control" id="inputtarjeta" placeholder="Como figura en la tarjeta">
+                                                            </div>
+        
+                                                            <div class="col-6 col-lg-3 mt-3">
+                                                                <label for="vencimientodate" class="form-label">Vencimiento</label>
+                                                                <input id="vencimientodate" class="form-control" type="date">
+                                                            </div>
+        
+                                                            <div class="col-6 mt-3 col-lg-3">
+                                                                <label for="inputcvv" class="form-label">Cod. Seguridad</label>
+                                                                <input type="number" class="form-control" id="inputcvv" placeholder="CVV">
+                                                            </div>
+        
+                                                            <div class="col-12 col-md-12 col-lg-6 mt-3">
+                                                                <label for="inputcvv" class="form-label">Documento del titular de la tarjeta</label>
+                                                                <input type="number" class="form-control" id="inputcvv" placeholder="Ej.: 1536785425">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
                                             <div class="col-12">
                                                 <div class="row">
-                                                    <div class="col-6 mt-3">
-                                                        <label for="inputtarjeta" class="form-label">Numero de tarjeta</label>
-                                                        <input type="number" class="form-control" id="inputtarjeta" placeholder="Ingresa el numero de tarjeta">
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="aceptterminos">
+                                                            <label class="form-check-label" for="aceptterminos">
+                                                                Leí y acepto los <span class="colorprimary fw-medium">términos & condiciones, políticas de privacidad</span> de CyberCard Colombia S.A.S.
+                                                            </label>
+                                                          </div>
                                                     </div>
-                                                    <div class="col-6 mt-3">
-                                                        <label for="inputtarjeta" class="form-label">Titular de tarjeta</label>
-                                                        <input type="number" class="form-control" id="inputtarjeta" placeholder="Como figura en la tarjeta">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 mt-3">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <button type="submit" class="rounded-3 btn bgred text-white mb-3 px-5 fw-bold">Comprar</button>
                                                     </div>
                                                 </div>
                                             </div>

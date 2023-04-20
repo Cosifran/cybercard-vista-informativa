@@ -1,5 +1,7 @@
 $color-main: #FF0000;
 $color-sec: #EEEEEE;
+$color-gris: #787878;
+$color-secun-gris: #6F6F6F;
 $font-6: 0.625rem;
 $fon-5: 0.875rem;
 
@@ -7,6 +9,17 @@ body{
     background-color: #F9F9F9;
 }
 
+.bgsecundario{
+    background-color: #F9F9F9;
+}
+
+.grissecundario{
+    color: $color-secun-gris;
+}
+
+.grissubtitulos{
+    color: $color-gris;
+}
 a{
     color: transparent !important;
 }
