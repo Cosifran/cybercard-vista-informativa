@@ -1,9 +1,13 @@
-body {
+.colorinput {
+  color: #5A5A5A;
+}
+
+.bgmain {
   background-color: #F9F9F9;
 }
 
 .bgsecundario {
-  background-color: #F9F9F9;
+  background-color: #EEEEEE;
 }
 
 .grissecundario {
@@ -23,11 +27,11 @@ a {
 }
 
 .colorprimary {
-  color: #FF0000;
+  color: hsl(0, 100%, 50%);
 }
 
 .bgred {
-  background-color: #FF0000 !important;
+  background-color: hsl(0, 100%, 50%) !important;
 }
 
 .justifytext {
