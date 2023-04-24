@@ -1,5 +1,9 @@
+.mi-input::-webkit-input-placeholder {
+  color: #adb5bd;
+}
+
 .colorinput {
-  color: #5A5A5A;
+  color: #adb5bd;
 }
 
 .bgmain {

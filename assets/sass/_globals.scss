@@ -1,5 +1,5 @@
 $color-main: hsl(0, 100%, 50%);
-$color-input: #5A5A5A;
+$color-input: #adb5bd;
 $color-sec: #EEEEEE;
 $bacgraund-main: #F9F9F9;
 $color-gris: #787878;
@@ -8,6 +8,10 @@ $font-6: 0.625rem;
 $fon-5: 0.875rem;
 $fon-4: 1.125rem;
 $fon-7: 0.75rem;
+
+.mi-input::-webkit-input-placeholder { 
+    color: $color-input;
+}
 
 .colorinput{
     color: $color-input;
