@@ -13,186 +13,188 @@
 <body>
     <main>
         <section>
-            <div class="container-fluid">
-                <img src="..." class="img-fluid" alt="banner principal">
-            </div>
 
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-12 col-xl-10 col-xxl-8">
-                        <div class="row mx-lg-3">
-                            <div class="col-12">
-                                <div class="card rounded-4 bg-white shadow-lg">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold ms-4 mt-3 mb-4">Regístrate en CyberCard</h5>
-
-                                        <!-- inicio del formulario -->
-                                        <div class="row mt-3 mx-0 mx-lg-3">
-                                            <div class="col-12">
-                                                <form class="row">
-                                                    <!-- tipo de documento -->
-                                                    <div class="col-12">
-                                                        <label for="input1" class="form-label">Tipo de Documento</label>
-                                                        <select class="form-select rounded-3 colorinput fontsnormalsmall"
-                                                            aria-label="Default select example" id="input1">
-                                                            <option selected>Selecciona uno</option>
-                                                            <option value="1">CÉDULA DE CIUDADANÍA</option>
-                                                            <option value="2">CÉDULA DE EXTRANJERÍA</option>
-                                                            <option value="3">PASAPORTE</option>
-                                                            <option value="4">DNI</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <!-- identificacion -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input2" class="form-label fw-normal">Identificación</label>
-                                                        <input type="number" class="form-control rounded-3 fontsnormalsmall mi-input" id="input2"
-                                                            placeholder="ingresa tu numero de identificación">
-                                                    </div>
-
-                                                    <!-- nombre -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input3" class="form-label">Nombre(s)</label>
-                                                        <input type="text" class="form-control rounded-3 mi-input fontsnormalsmall" id="input3"
-                                                            placeholder="ingresa tu nombre">
-                                                    </div>
-
-                                                    <!-- apellidos -->
-                                                    <div class="col-12 mt-3">
-                                                        <div class="row">
-                                                            <div class="col-12 col-lg-6">
-                                                                <label for="input4" class="form-label rounded-3">Primer
-                                                                    apellido</label>
-                                                                <input type="text" class="form-control mi-input fontsnormalsmall" id="input4"
-                                                                    placeholder="Ingresa tu primer apellido">
-                                                            </div>
-                                                            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                                                                <label for="input5" class="form-label rounded-3">Segundo
-                                                                    apellido</label>
-                                                                <input type="text" class="form-control mi-input fontsnormalsmall" id="input5"
-                                                                    placeholder="Ingresa tu segundo apellido">
-                                                            </div>
+                <div class="row justify-content-center position-relative">
+                    <div class="col-12 p-0 ">
+                        <a href="#"><img src="./assets/image/banner.png" class="img-fluid " alt="banner principal" ></a>
+                    </div>
+                    <div class="row justify-content-center posicion_body ">
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-10 col-xxl-9 ">
+                            <div class="row mx-lg-3 ">
+                                <div class="col-12 p-0 ">
+                                    <div class="card rounded-4 bg-white shadow-lg">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold ms-4 mt-3 mb-4">Regístrate en CyberCard</h5>
+    
+                                            <!-- inicio del formulario -->
+                                            <div class="row mt-3 mx-0 mx-lg-3">
+                                                <div class="col-12">
+                                                    <form class="row">
+                                                        <!-- tipo de documento -->
+                                                        <div class="col-12">
+                                                            <label for="input1" class="form-label">Tipo de Documento</label>
+                                                            <select class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input1">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">CÉDULA DE CIUDADANÍA</option>
+                                                                <option value="2">CÉDULA DE EXTRANJERÍA</option>
+                                                                <option value="3">PASAPORTE</option>
+                                                                <option value="4">DNI</option>
+                                                            </select>
                                                         </div>
-                                                    </div>
-
-                                                    <!-- fecha de nacimiento -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="startDate" class="form-label">Fecha de
-                                                            nacimiento</label>
-                                                        <input id="startDate" class="form-control rounded-3 colorinput fontsnormalsmall"
-                                                            type="date" />
-                                                    </div>
-
-                                                    <!-- telefono celular -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input6" class="form-label">Teléfono celular</label>
-                                                        <input type="number" class="form-control rounded-3 mi-input fontsnormalsmall" id="input6"
-                                                            placeholder="Numero de celular">
-                                                    </div>
-
-                                                    <!-- correo electronico -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input7" class="form-label">Correo
-                                                            electrónico</label>
-                                                        <input type="email" class="form-control rounded-3 mi-input fontsnormalsmall" id="input7"
-                                                            placeholder="Ingresa tu correo electronico">
-                                                    </div>
-
-                                                    <!-- genero -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input8" class="form-label">Genero</label>
-                                                        <select class="form-select rounded-3 colorinput fontsnormalsmall"
-                                                            aria-label="Default select example" id="input1">
-                                                            <option selected>Selecciona uno</option>
-                                                            <option value="1">Femenino</option>
-                                                            <option value="2">Masculino</option>
-                                                            <option value="3">No Binario</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <!-- pais -->
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input9" class="form-label ">País</label>
-                                                        <select class="form-select rounded-3 colorinput fontsnormalsmall"
-                                                            aria-label="Default select example" id="input9">
-                                                            <option selected>Selecciona uno</option>
-                                                            <option value="1">Colombia</option>
-                                                            <option value="2">Perú</option>
-                                                            <option value="3">Ecuador</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <!-- estados -->
-                                                    <div class="col-12 mt-3">
-                                                        <div class="row">
-                                                            <div class="col-12 col-lg-6">
-                                                                <label for="input10" class="form-label">Estado /
-                                                                    Región</label>
-                                                                <select class="form-select colorinput "
-                                                                    aria-label="Default select example" id="input10">
-                                                                    <option selected>Selecciona uno</option>
-                                                                    <option value="1">Colombia</option>
-                                                                    <option value="2">Perú</option>
-                                                                    <option value="3">Ecuador</option>
-                                                                </select>
-                                                            </div>
-
-                                                            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                                                                <label for="input11" class="form-label">Ciudad /
-                                                                    Provincia</label>
-                                                                <select class="form-select colorinput fontsnormalsmall"
-                                                                    aria-label="Default select example" id="input11">
-                                                                    <option selected>Selecciona uno</option>
-                                                                    <option value="1">Colombia</option>
-                                                                    <option value="2">Perú</option>
-                                                                    <option value="3">Ecuador</option>
-                                                                </select>
+    
+                                                        <!-- identificacion -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input2" class="form-label fw-normal">Identificación</label>
+                                                            <input type="number" class="form-control rounded-3 fontsnormalsmall mi-input" id="input2"
+                                                                placeholder="ingresa tu numero de identificación">
+                                                        </div>
+    
+                                                        <!-- nombre -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input3" class="form-label">Nombre(s)</label>
+                                                            <input type="text" class="form-control rounded-3 mi-input fontsnormalsmall" id="input3"
+                                                                placeholder="ingresa tu nombre">
+                                                        </div>
+    
+                                                        <!-- apellidos -->
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row">
+                                                                <div class="col-12 col-lg-6">
+                                                                    <label for="input4" class="form-label rounded-3">Primer
+                                                                        apellido</label>
+                                                                    <input type="text" class="form-control mi-input fontsnormalsmall" id="input4"
+                                                                        placeholder="Ingresa tu primer apellido">
+                                                                </div>
+                                                                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                                                    <label for="input5" class="form-label rounded-3">Segundo
+                                                                        apellido</label>
+                                                                    <input type="text" class="form-control mi-input fontsnormalsmall" id="input5"
+                                                                        placeholder="Ingresa tu segundo apellido">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input13" class="form-label">Crear Contraseña</label>
-                                                        <input type="password" class="form-control mi-input fontsnormalsmall" id="input13"
-                                                            placeholder="************">
-                                                    </div>
-
-                                                    <div class="col-12 mt-3">
-                                                        <label for="input14" class="form-label">Confirmar Contraseña</label>
-                                                        <input type="password" class="form-control mi-input fontsnormalsmall" id="input14"
-                                                            placeholder="************">
-                                                    </div>
-
-                                                    <div class="col-12 mt-3">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                                <p class="mb-0">Leí y acepto los <span class="colorprimary fw-semibold">términos & condiciones, políticas de
-                                                                    privacidad</span> de CyberCard Colombia S.A.S.</p>
-                                                            </label>
+    
+                                                        <!-- fecha de nacimiento -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="startDate" class="form-label">Fecha de
+                                                                nacimiento</label>
+                                                            <input id="startDate" class="form-control rounded-3 colorinput fontsnormalsmall"
+                                                                type="date" />
                                                         </div>
-                                                    </div>
-
-                                                    <div class="col-12 mt-2">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                                Leí y acepto los <span class="colorprimary fw-semibold">términos & condiciones, políticas de privacidad</span> del programa puntos CyberCard.
-                                                            </label>
+    
+                                                        <!-- telefono celular -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input6" class="form-label">Teléfono celular</label>
+                                                            <input type="number" class="form-control rounded-3 mi-input fontsnormalsmall" id="input6"
+                                                                placeholder="Numero de celular">
                                                         </div>
-                                                    </div>
-
-                                                    <div class="col-12 mt-3">
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-12 d-flex justify-content-center">
-                                                                <button type="submit"
-                                                                    class="btn bgred text-white mb-3 px-5 fw-bold">Registrarme</button>
+    
+                                                        <!-- correo electronico -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input7" class="form-label">Correo
+                                                                electrónico</label>
+                                                            <input type="email" class="form-control rounded-3 mi-input fontsnormalsmall" id="input7"
+                                                                placeholder="Ingresa tu correo electronico">
+                                                        </div>
+    
+                                                        <!-- genero -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input8" class="form-label">Genero</label>
+                                                            <select class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input1">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">Femenino</option>
+                                                                <option value="2">Masculino</option>
+                                                                <option value="3">No Binario</option>
+                                                            </select>
+                                                        </div>
+    
+                                                        <!-- pais -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input9" class="form-label ">País</label>
+                                                            <select class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input9">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">Colombia</option>
+                                                                <option value="2">Perú</option>
+                                                                <option value="3">Ecuador</option>
+                                                            </select>
+                                                        </div>
+    
+                                                        <!-- estados -->
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row">
+                                                                <div class="col-12 col-lg-6">
+                                                                    <label for="input10" class="form-label">Estado /
+                                                                        Región</label>
+                                                                    <select class="form-select colorinput "
+                                                                        aria-label="Default select example" id="input10">
+                                                                        <option selected>Selecciona uno</option>
+                                                                        <option value="1">Colombia</option>
+                                                                        <option value="2">Perú</option>
+                                                                        <option value="3">Ecuador</option>
+                                                                    </select>
+                                                                </div>
+    
+                                                                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                                                    <label for="input11" class="form-label">Ciudad /
+                                                                        Provincia</label>
+                                                                    <select class="form-select colorinput fontsnormalsmall"
+                                                                        aria-label="Default select example" id="input11">
+                                                                        <option selected>Selecciona uno</option>
+                                                                        <option value="1">Colombia</option>
+                                                                        <option value="2">Perú</option>
+                                                                        <option value="3">Ecuador</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </form>
+    
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input13" class="form-label">Crear Contraseña</label>
+                                                            <input type="password" class="form-control mi-input fontsnormalsmall" id="input13"
+                                                                placeholder="************">
+                                                        </div>
+    
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input14" class="form-label">Confirmar Contraseña</label>
+                                                            <input type="password" class="form-control mi-input fontsnormalsmall" id="input14"
+                                                                placeholder="************">
+                                                        </div>
+    
+                                                        <div class="col-12 mt-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    <p class="mb-0">Leí y acepto los <span class="colorprimary fw-medium">términos & condiciones, políticas de
+                                                                        privacidad</span> de CyberCard Colombia S.A.S.</p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="col-12 mt-2">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    Leí y acepto los <span class="colorprimary fw-medium">términos & condiciones, políticas de privacidad</span> del programa puntos CyberCard.
+                                                                </label>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-12 d-flex justify-content-center">
+                                                                    <button type="submit"
+                                                                        class="btn bgred text-white mb-3 px-5 fw-bold">Registrarme</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
