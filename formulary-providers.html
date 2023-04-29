@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulary providers</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center position-relative">
+                    <div class="col-12 p-0 ">
+                        <a href="#"><img src="./assets/image/banner.png" class="img-fluid " alt="banner principal"></a>
+                    </div>
+
+                    <div class="row justify-content-center align-items-center posicion_body">
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-10 col-xxl-9">
+                            <div class="row mx-lg-3">
+                                <div class="col-12 p-0 ">
+                                    <div class="card rounded-4 bg-white shadow-lg">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold ms-4 mt-3 mb-4">Información Representante
+                                                Legal</h5>
+
+                                            <!-- inicio del formulario -->
+                                            <div class="row mt-3 mx-0 mx-lg-3">
+                                                <div class="col-12">
+                                                    <form class="row">
+
+                                                        <!-- nombre del representante legal-->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input3" class="form-label">Nombre del
+                                                                representante legal</label>
+                                                            <input type="text"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input3" placeholder="Ingresa tu nombre">
+                                                        </div>
+
+                                                        <!-- apellidos del representante legal -->
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row">
+                                                                <div class="col-12 col-lg-6">
+                                                                    <label for="input4"
+                                                                        class="form-label rounded-3">Primer apellido del
+                                                                        representante legal</label>
+                                                                    <input type="text"
+                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        id="input4"
+                                                                        placeholder="Ingresa tu primer apellido">
+                                                                </div>
+                                                                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                                                    <label for="input5"
+                                                                        class="form-label rounded-3">Segundo apellido
+                                                                        del representante legal</label>
+                                                                    <input type="text"
+                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        id="input5"
+                                                                        placeholder="Ingresa tu segundo apellido">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- tipo de documento representante legal -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="documentoDeIdentidad" class="form-label">Tipo de
+                                                                Documento del representante legal</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example"
+                                                                id="documentoDeIdentidad">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">CÉDULA DE CIUDADANÍA</option>
+                                                                <option value="2">CÉDULA DE EXTRANJERÍA</option>
+                                                                <option value="3">PASAPORTE</option>
+                                                                <option value="4">DNI</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- numero de identificacion -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="inputIdentificacion"
+                                                                class="form-label fw-normal">Identificación del
+                                                                representante legal</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input"
+                                                                id="input2"
+                                                                placeholder="ingresa tu numero de identificación">
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="identificacionInput" class="form-label">Subir
+                                                                documento de identidad (Cedula o pasaporte)</label>
+                                                            <input
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input borderdashed"
+                                                                type="file" id="identificacionInput" multiple>
+                                                        </div>
+
+                                                        <!-- fecha de nacimiento -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="startDate" class="form-label">Fecha de
+                                                                nacimiento</label>
+                                                            <input id="startDate"
+                                                                class="form-control rounded-3 colorinput fontsnormalsmall"
+                                                                type="date" />
+                                                        </div>
+
+                                                        <!-- telefono celular -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input6" class="form-label">Teléfono
+                                                                celular</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input6" placeholder="Numero de celular">
+                                                        </div>
+
+                                                        <!-- correo electronico -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input7" class="form-label">Correo
+                                                                electrónico</label>
+                                                            <input type="email"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input7" placeholder="Ingresa tu correo electronico">
+                                                        </div>
+
+                                                        <!-- genero -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input8" class="form-label">Genero</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input1">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">Femenino</option>
+                                                                <option value="2">Masculino</option>
+                                                                <option value="3">No Binario</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- pais -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input9" class="form-label ">País</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input9">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">Colombia</option>
+                                                                <option value="2">Perú</option>
+                                                                <option value="3">Ecuador</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- estados -->
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row">
+                                                                <div class="col-12 col-lg-6">
+                                                                    <label for="input10" class="form-label">Estado /
+                                                                        Región</label>
+                                                                    <select class="form-select colorinput "
+                                                                        aria-label="Default select example"
+                                                                        id="input10">
+                                                                        <option selected>Selecciona uno</option>
+                                                                        <option value="1">Colombia</option>
+                                                                        <option value="2">Perú</option>
+                                                                        <option value="3">Ecuador</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                                                    <label for="input11" class="form-label">Ciudad /
+                                                                        Provincia</label>
+                                                                    <select
+                                                                        class="form-select colorinput fontsnormalsmall"
+                                                                        aria-label="Default select example"
+                                                                        id="input11">
+                                                                        <option selected>Selecciona uno</option>
+                                                                        <option value="1">Colombia</option>
+                                                                        <option value="2">Perú</option>
+                                                                        <option value="3">Ecuador</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <h5 class="card-title fw-bold ps-0 mt-3 mb-4">Información De La
+                                                            Empresa</h5>
+
+                                                        <!-- tipo de empresa -->
+                                                        <div class="col-12">
+                                                            <label for="documentoDeIdentidad" class="form-label">Tipo de
+                                                                empresa</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example"
+                                                                id="documentoDeIdentidad">
+                                                                <option selected>Selecciona uno</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- razon social -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input3" class="form-label">Razón social</label>
+                                                            <input type="text"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input3" placeholder="Ingresa razón social">
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input3" class="form-label">Nombre comercial de
+                                                                la empresa</label>
+                                                            <input type="text"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input3" placeholder="Ingresa nombre comercial">
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input2" class="form-label fw-normal">Nit</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input"
+                                                                id="input2"
+                                                                placeholder="Ingresa nit Ejemplo:  000.000.000-0">
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="rutInput" class="form-label">Subir documento
+                                                                (Cámara de comercio o Rut)</label>
+                                                            <input
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input borderdashed"
+                                                                type="file" id="rutInput" multiple="">
+                                                        </div>
+
+                                                        <div class="col-6 mt-3">
+                                                            <label for="inputCategoria"
+                                                                class="form-label">Categorías</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="inputCategoria">
+                                                                <option selected>Selecciona uno</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-6 mt-3">
+                                                            <label for="inputSubcategoria"
+                                                                class="form-label">Sub-Categorías</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example"
+                                                                id="documentoDeIdentidad">
+                                                                <option selected>Selecciona uno</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="inputNumerotelefonico"
+                                                                class="form-label fw-normal">Teléfono celular</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input"
+                                                                id="inputNumerotelefonico"
+                                                                placeholder="Numero de celular">
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="inputCorreo" class="form-label">Correo
+                                                                electrónico</label>
+                                                            <input type="email"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="inputCorreo"
+                                                                placeholder="Ingresa tu correo electronico">
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <label for="inputPais" class="form-label">Pais</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="inputPais">
+                                                                <option selected="">Selecciona uno</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-6 mt-3">
+                                                            <label for="inputEstado" class="form-label">Estado /
+                                                                Región</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="inputEstado">
+                                                                <option selected="">Selecciona uno</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-6 mt-3">
+                                                            <label for="inputCiudad" class="form-label">Ciudad /
+                                                                Provincia</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="inputCiudad">
+                                                                <option selected="">Selecciona uno</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <h5 class="card-title fw-bold ps-0 mt-3 mb-4">Información De
+                                                            Contacto</h5>
+
+                                                        <!-- nombre -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input3" class="form-label">Nombre(s)</label>
+                                                            <input type="text"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input3" placeholder="ingresa tu nombre">
+                                                        </div>
+
+                                                        <!-- apellidos -->
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row">
+                                                                <div class="col-12 col-lg-6">
+                                                                    <label for="input4"
+                                                                        class="form-label rounded-3">Primer
+                                                                        apellido</label>
+                                                                    <input type="text"
+                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        id="input4"
+                                                                        placeholder="Ingresa tu primer apellido">
+                                                                </div>
+                                                                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                                                    <label for="input5"
+                                                                        class="form-label rounded-3">Segundo
+                                                                        apellido</label>
+                                                                    <input type="text"
+                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        id="input5"
+                                                                        placeholder="Ingresa tu segundo apellido">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- telefono celular -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input6" class="form-label">Teléfono
+                                                                celular</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input6" placeholder="Numero de celular">
+                                                        </div>
+
+                                                        <!-- correo electronico -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input7" class="form-label">Correo
+                                                                electrónico</label>
+                                                            <input type="email"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                id="input7" placeholder="Ingresa tu correo electronico">
+                                                        </div>
+
+                                                        <!-- genero -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input8" class="form-label">Genero</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input1">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">Femenino</option>
+                                                                <option value="2">Masculino</option>
+                                                                <option value="3">No Binario</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- pais -->
+                                                        <div class="col-12 mt-3">
+                                                            <label for="input9" class="form-label ">País</label>
+                                                            <select
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                aria-label="Default select example" id="input9">
+                                                                <option selected>Selecciona uno</option>
+                                                                <option value="1">Colombia</option>
+                                                                <option value="2">Perú</option>
+                                                                <option value="3">Ecuador</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- estados -->
+                                                        <div class="col-12 mt-3">
+                                                            <div class="row">
+                                                                <div class="col-12 col-lg-6">
+                                                                    <label for="input10" class="form-label">Estado /
+                                                                        Región</label>
+                                                                    <select class="form-select colorinput "
+                                                                        aria-label="Default select example"
+                                                                        id="input10">
+                                                                        <option selected>Selecciona uno</option>
+                                                                        <option value="1">Colombia</option>
+                                                                        <option value="2">Perú</option>
+                                                                        <option value="3">Ecuador</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                                                                    <label for="input11" class="form-label">Ciudad /
+                                                                        Provincia</label>
+                                                                    <select
+                                                                        class="form-select colorinput fontsnormalsmall"
+                                                                        aria-label="Default select example"
+                                                                        id="input11">
+                                                                        <option selected>Selecciona uno</option>
+                                                                        <option value="1">Colombia</option>
+                                                                        <option value="2">Perú</option>
+                                                                        <option value="3">Ecuador</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/12335c3d20.js" crossorigin="anonymous"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+
+</html>
