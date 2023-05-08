@@ -7,10 +7,12 @@ $color-sec: #EEEEEE;
 $bacgraund-main: #F9F9F9;
 $color-gris: #787878;
 $color-secun-gris: #6F6F6F;
+$fon-7: 0.75rem;
 $font-6: 0.625rem;
 $fon-5: 0.875rem;
 $fon-4: 1.125rem;
-$fon-7: 0.75rem;
+$fon-3: 1.25rem;
+$fon-2: 2.375rem;
 
 body {
     font-family: "Roboto", sans-serif !important;
@@ -75,6 +77,14 @@ a {
 
 .fontverysmall {
     font-size: $fon-7;
+}
+
+.fontsubtittel{
+    font-size: $fon-3;
+}
+
+.fontbig{
+    font-size: $fon-2;
 }
 
 .t-fs-g {
