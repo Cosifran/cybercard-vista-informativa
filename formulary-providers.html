@@ -8,6 +8,7 @@
     <title>formulary providers</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                                 <div class="col-12 p-0 ">
                                     <div class="card rounded-4 bg-white shadow-lg">
                                         <div class="card-body">
-                                            <h5 class="card-title fw-bold ms-4 mt-3 mb-4">Información Representante
+                                            <h5 class="card-title fw-bold ms-4 mt-3 mb-4" id="infoRepresentan">Información Representante
                                                 Legal</h5>
 
                                             <!-- inicio del formulario -->
@@ -38,7 +39,7 @@
                                                             <label for="input3" class="form-label">Nombre del
                                                                 representante legal</label>
                                                             <input type="text"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input3" placeholder="Ingresa tu nombre">
                                                         </div>
 
@@ -50,7 +51,7 @@
                                                                         class="form-label rounded-3">Primer apellido del
                                                                         representante legal</label>
                                                                     <input type="text"
-                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        class="form-control mi-input fontsnormalsmall inputfoucus"
                                                                         id="input4"
                                                                         placeholder="Ingresa tu primer apellido">
                                                                 </div>
@@ -59,7 +60,7 @@
                                                                         class="form-label rounded-3">Segundo apellido
                                                                         del representante legal</label>
                                                                     <input type="text"
-                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        class="form-control mi-input fontsnormalsmall inputfoucus"
                                                                         id="input5"
                                                                         placeholder="Ingresa tu segundo apellido">
                                                                 </div>
@@ -71,7 +72,7 @@
                                                             <label for="documentoDeIdentidad" class="form-label">Tipo de
                                                                 Documento del representante legal</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example"
                                                                 id="documentoDeIdentidad">
                                                                 <option selected>Selecciona uno</option>
@@ -88,17 +89,25 @@
                                                                 class="form-label fw-normal">Identificación del
                                                                 representante legal</label>
                                                             <input type="number"
-                                                                class="form-control rounded-3 fontsnormalsmall mi-input"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input inputfoucus"
                                                                 id="input2"
                                                                 placeholder="ingresa tu numero de identificación">
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="identificacionInput" class="form-label">Subir
-                                                                documento de identidad (Cedula o pasaporte)</label>
-                                                            <input
-                                                                class="form-control rounded-3 fontsnormalsmall mi-input borderdashed"
-                                                                type="file" id="identificacionInput" multiple>
+                                                            <label for="">Información de los soportes para el
+                                                                prospecto</label>
+                                                            <div class="input-group form-control border-0 p-0 mt-2">
+                                                                <label tabindex="0"
+                                                                    class="form-control rounded-3 fontsnormalsmall mi-input borderdashed border-end-0 inputfoucus">
+                                                                    Subir documento de identidad (Cedula o pasaporte)
+                                                                    <input type="file" class="invisible ">
+                                                                </label>
+                                                                <span
+                                                                    class="input-group-text bg-white borderdashed border-start-0"><i
+                                                                        class="fa-solid fa-file-arrow-up"
+                                                                        style="color: #787878;"></i></span>
+                                                            </div>
                                                         </div>
 
                                                         <!-- fecha de nacimiento -->
@@ -106,7 +115,7 @@
                                                             <label for="startDate" class="form-label">Fecha de
                                                                 nacimiento</label>
                                                             <input id="startDate"
-                                                                class="form-control rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-control rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 type="date" />
                                                         </div>
 
@@ -115,7 +124,7 @@
                                                             <label for="input6" class="form-label">Teléfono
                                                                 celular</label>
                                                             <input type="number"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input6" placeholder="Numero de celular">
                                                         </div>
 
@@ -124,7 +133,7 @@
                                                             <label for="input7" class="form-label">Correo
                                                                 electrónico</label>
                                                             <input type="email"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input7" placeholder="Ingresa tu correo electronico">
                                                         </div>
 
@@ -132,7 +141,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="input8" class="form-label">Genero</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="input1">
                                                                 <option selected>Selecciona uno</option>
                                                                 <option value="1">Femenino</option>
@@ -145,7 +154,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="input9" class="form-label ">País</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="input9">
                                                                 <option selected>Selecciona uno</option>
                                                                 <option value="1">Colombia</option>
@@ -160,7 +169,7 @@
                                                                 <div class="col-12 col-lg-6">
                                                                     <label for="input10" class="form-label">Estado /
                                                                         Región</label>
-                                                                    <select class="form-select colorinput "
+                                                                    <select class="form-select colorinput inputfoucus"
                                                                         aria-label="Default select example"
                                                                         id="input10">
                                                                         <option selected>Selecciona uno</option>
@@ -174,7 +183,7 @@
                                                                     <label for="input11" class="form-label">Ciudad /
                                                                         Provincia</label>
                                                                     <select
-                                                                        class="form-select colorinput fontsnormalsmall"
+                                                                        class="form-select colorinput fontsnormalsmall inputfoucus"
                                                                         aria-label="Default select example"
                                                                         id="input11">
                                                                         <option selected>Selecciona uno</option>
@@ -194,7 +203,7 @@
                                                             <label for="documentoDeIdentidad" class="form-label">Tipo de
                                                                 empresa</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example"
                                                                 id="documentoDeIdentidad">
                                                                 <option selected>Selecciona uno</option>
@@ -205,7 +214,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="input3" class="form-label">Razón social</label>
                                                             <input type="text"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input3" placeholder="Ingresa razón social">
                                                         </div>
 
@@ -213,14 +222,14 @@
                                                             <label for="input3" class="form-label">Nombre comercial de
                                                                 la empresa</label>
                                                             <input type="text"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input3" placeholder="Ingresa nombre comercial">
                                                         </div>
 
                                                         <div class="col-12 mt-3">
                                                             <label for="input2" class="form-label fw-normal">Nit</label>
                                                             <input type="number"
-                                                                class="form-control rounded-3 fontsnormalsmall mi-input"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input inputfoucus"
                                                                 id="input2"
                                                                 placeholder="Ingresa nit Ejemplo:  000.000.000-0">
                                                         </div>
@@ -229,15 +238,16 @@
                                                             <label for="rutInput" class="form-label">Subir documento
                                                                 (Cámara de comercio o Rut)</label>
                                                             <input
-                                                                class="form-control rounded-3 fontsnormalsmall mi-input borderdashed"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input borderdashed inputfoucus"
                                                                 type="file" id="rutInput" multiple="">
                                                         </div>
+
 
                                                         <div class="col-6 mt-3">
                                                             <label for="inputCategoria"
                                                                 class="form-label">Categorías</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="inputCategoria">
                                                                 <option selected>Selecciona uno</option>
                                                             </select>
@@ -247,7 +257,7 @@
                                                             <label for="inputSubcategoria"
                                                                 class="form-label">Sub-Categorías</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example"
                                                                 id="documentoDeIdentidad">
                                                                 <option selected>Selecciona uno</option>
@@ -258,7 +268,7 @@
                                                             <label for="inputNumerotelefonico"
                                                                 class="form-label fw-normal">Teléfono celular</label>
                                                             <input type="number"
-                                                                class="form-control rounded-3 fontsnormalsmall mi-input"
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input inputfoucus"
                                                                 id="inputNumerotelefonico"
                                                                 placeholder="Numero de celular">
                                                         </div>
@@ -267,7 +277,7 @@
                                                             <label for="inputCorreo" class="form-label">Correo
                                                                 electrónico</label>
                                                             <input type="email"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="inputCorreo"
                                                                 placeholder="Ingresa tu correo electronico">
                                                         </div>
@@ -275,7 +285,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="inputPais" class="form-label">Pais</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="inputPais">
                                                                 <option selected="">Selecciona uno</option>
                                                             </select>
@@ -285,7 +295,7 @@
                                                             <label for="inputEstado" class="form-label">Estado /
                                                                 Región</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="inputEstado">
                                                                 <option selected="">Selecciona uno</option>
                                                             </select>
@@ -295,7 +305,7 @@
                                                             <label for="inputCiudad" class="form-label">Ciudad /
                                                                 Provincia</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="inputCiudad">
                                                                 <option selected="">Selecciona uno</option>
                                                             </select>
@@ -308,7 +318,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="input3" class="form-label">Nombre(s)</label>
                                                             <input type="text"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input3" placeholder="ingresa tu nombre">
                                                         </div>
 
@@ -320,7 +330,7 @@
                                                                         class="form-label rounded-3">Primer
                                                                         apellido</label>
                                                                     <input type="text"
-                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        class="form-control mi-input fontsnormalsmall inputfoucus"
                                                                         id="input4"
                                                                         placeholder="Ingresa tu primer apellido">
                                                                 </div>
@@ -329,7 +339,7 @@
                                                                         class="form-label rounded-3">Segundo
                                                                         apellido</label>
                                                                     <input type="text"
-                                                                        class="form-control mi-input fontsnormalsmall"
+                                                                        class="form-control mi-input fontsnormalsmall inputfoucus"
                                                                         id="input5"
                                                                         placeholder="Ingresa tu segundo apellido">
                                                                 </div>
@@ -341,7 +351,7 @@
                                                             <label for="input6" class="form-label">Teléfono
                                                                 celular</label>
                                                             <input type="number"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input6" placeholder="Numero de celular">
                                                         </div>
 
@@ -350,7 +360,7 @@
                                                             <label for="input7" class="form-label">Correo
                                                                 electrónico</label>
                                                             <input type="email"
-                                                                class="form-control rounded-3 mi-input fontsnormalsmall"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
                                                                 id="input7" placeholder="Ingresa tu correo electronico">
                                                         </div>
 
@@ -358,7 +368,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="input8" class="form-label">Genero</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="input1">
                                                                 <option selected>Selecciona uno</option>
                                                                 <option value="1">Femenino</option>
@@ -371,7 +381,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="input9" class="form-label ">País</label>
                                                             <select
-                                                                class="form-select rounded-3 colorinput fontsnormalsmall"
+                                                                class="form-select rounded-3 colorinput fontsnormalsmall inputfoucus"
                                                                 aria-label="Default select example" id="input9">
                                                                 <option selected>Selecciona uno</option>
                                                                 <option value="1">Colombia</option>
@@ -386,7 +396,7 @@
                                                                 <div class="col-12 col-lg-6">
                                                                     <label for="input10" class="form-label">Estado /
                                                                         Región</label>
-                                                                    <select class="form-select colorinput "
+                                                                    <select class="form-select colorinput inputfoucus"
                                                                         aria-label="Default select example"
                                                                         id="input10">
                                                                         <option selected>Selecciona uno</option>
@@ -400,7 +410,7 @@
                                                                     <label for="input11" class="form-label">Ciudad /
                                                                         Provincia</label>
                                                                     <select
-                                                                        class="form-select colorinput fontsnormalsmall"
+                                                                        class="form-select colorinput fontsnormalsmall inputfoucus"
                                                                         aria-label="Default select example"
                                                                         id="input11">
                                                                         <option selected>Selecciona uno</option>
@@ -418,7 +428,7 @@
                                                         <div class="col-12 mt-3">
                                                             <label for="entidadbancaria" class="form-label">Entidad
                                                                 Bancaria</label>
-                                                            <select class="form-select colorinput "
+                                                            <select class="form-select colorinput inputfoucus"
                                                                 aria-label="Default select example"
                                                                 id="entidadbancaria">
                                                                 <option selected>Selecciona tu banco</option>
@@ -428,8 +438,9 @@
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="selcctipodecuenta" class="form-label">Tipo de cuenta</label>
-                                                            <select class="form-select colorinput "
+                                                            <label for="selcctipodecuenta" class="form-label">Tipo de
+                                                                cuenta</label>
+                                                            <select class="form-select colorinput inputfoucus"
                                                                 aria-label="Default select example"
                                                                 id="selcctipodecuenta">
                                                                 <option selected>Seleccionar tipo de cuenta</option>
@@ -439,18 +450,28 @@
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="numerodeC" class="form-label">Numero de cuenta</label>
-                                                            <input type="number" class="form-control rounded-3 mi-input fontsnormalsmall" id="numerodeC" placeholder="Ingresa el numero de la cuenta bancaria">
+                                                            <label for="numerodeC" class="form-label">Numero de
+                                                                cuenta</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
+                                                                id="numerodeC"
+                                                                placeholder="Ingresa el numero de la cuenta bancaria">
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="titularCB" class="form-label">Titular de la cuenta bancaria</label>
-                                                            <input type="text" class="form-control rounded-3 mi-input fontsnormalsmall" id="titularCB" placeholder="Nombre del titular de la cuenta">
+                                                            <label for="titularCB" class="form-label">Titular de la
+                                                                cuenta bancaria</label>
+                                                            <input type="text"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
+                                                                id="titularCB"
+                                                                placeholder="Nombre del titular de la cuenta">
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="tipoDeDocument" class="form-label">Tipo de Documento</label>
-                                                            <select class="form-select colorinput " aria-label="Default select example" id="tipoDeDocument">
+                                                            <label for="tipoDeDocument" class="form-label">Tipo de
+                                                                Documento</label>
+                                                            <select class="form-select  colorinput inputfoucus"
+                                                                aria-label="Default select example" id="tipoDeDocument">
                                                                 <option selected="">Selecciona uno</option>
                                                                 <option value="1">CÉDULA DE CIUDADANÍA</option>
                                                                 <option value="2">CÉDULA DE EXTRANJERÍA</option>
@@ -460,41 +481,114 @@
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="numeroDeI" class="form-label">Numero de identificación</label>
-                                                            <input type="number" class="form-control rounded-3 mi-input fontsnormalsmall" id="numeroDeI" placeholder="ingresa tu numero de identificación">
+                                                            <label for="numeroDeI" class="form-label">Numero de
+                                                                identificación</label>
+                                                            <input type="number"
+                                                                class="form-control rounded-3 mi-input fontsnormalsmall inputfoucus"
+                                                                id="numeroDeI"
+                                                                placeholder="ingresa tu numero de identificación">
                                                         </div>
 
                                                         <div class="col-12 mt-3">
-                                                            <label for="rutInput" class="form-label">Subir documento (Certificación bancaria)</label>
-                                                            <input class="form-control rounded-3 fontsnormalsmall mi-input borderdashed" type="file" id="rutInput" multiple="">
+                                                            <label for="rutInput" class="form-label ">Subir documento
+                                                                (Certificación bancaria)</label>
+                                                            <input
+                                                                class="form-control rounded-3 fontsnormalsmall mi-input borderdashed inputfoucus"
+                                                                type="file" id="rutInput" multiple="">
                                                         </div>
 
                                                         <div class="col-12 mt-3">
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckDefault">
+                                                                <input
+                                                                    class="form-check-input inputfoucus form-check-input:checked"
+                                                                    type="checkbox" value="" id="flexCheckDefault">
                                                                 <label class="form-check-label" for="flexCheckDefault">
-                                                                    <p class="mb-0">Leí y acepto los <span class="colorprimary fw-medium">términos & condiciones, políticas de
-                                                                        privacidad</span> de CyberCard Colombia S.A.S.</p>
+                                                                    <p class="mb-0">Leí y acepto los <span
+                                                                            class="colorprimary fw-medium">términos &
+                                                                            condiciones, políticas de
+                                                                            privacidad</span> de CyberCard Colombia
+                                                                        S.A.S.</p>
                                                                 </label>
                                                             </div>
                                                         </div>
-    
+
                                                         <div class="col-12 mt-2">
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="check-dos">
+                                                                <input
+                                                                    class="form-check-input inputfoucus form-check-input:checked"
+                                                                    type="checkbox" value="" id="check-dos">
                                                                 <label class="form-check-label" for="check-dos">
-                                                                    Leí y acepto los <span class="colorprimary fw-medium">términos & condiciones, políticas de privacidad</span> del programa puntos CyberCard.
+                                                                    Leí y acepto los <span
+                                                                        class="colorprimary fw-medium">términos &
+                                                                        condiciones, políticas de privacidad</span> del
+                                                                    programa puntos CyberCard.
                                                                 </label>
                                                             </div>
                                                         </div>
-    
+
                                                         <div class="col-12 mt-3">
                                                             <div class="row justify-content-center">
                                                                 <div class="col-12 d-flex justify-content-center">
-                                                                    <button type="submit"
-                                                                        class="btn bgred text-white mb-3 px-5 fw-bold">Vincularme</button>
+                                                                    <button type="button"
+                                                                        class="btn bgred text-white mb-3 px-5 fw-bold"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">
+                                                                        Registrarme
+                                                                    </button>
+
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="exampleModal"
+                                                                        tabindex="-1"
+                                                                        aria-labelledby="exampleModalLabel"
+                                                                        aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-body">
+                                                                                    <div class="container">
+                                                                                        <div class="row">
+                                                                                            <div class="col-12">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-12">
+                                                                                                        <p
+                                                                                                        class="text-center fs-1">
+                                                                                                        <i class="fa-sharp fa-solid fa-circle-check"
+                                                                                                            style="color: #ff0000;"></i>
+                                                                                                    </p>
+                                                                                                    <p
+                                                                                                        class="text-center fontsubtittel fw-bold">
+                                                                                                        Confirmación de
+                                                                                                        vinculación</p>
+                                                                                                    <p class="text-center">
+                                                                                                        Has finalizado todos
+                                                                                                        los pasos para
+                                                                                                        suscribirte a
+                                                                                                        Marketplace de
+                                                                                                        CyberCard. Confirma
+                                                                                                        el envío del
+                                                                                                        formulario o
+                                                                                                        rectifica los datos
+                                                                                                        antes de enviarlos a
+                                                                                                        un asesor.</p>
+                                                                                                    <p class="text-center">
+                                                                                                        ¡Gracias por confiar
+                                                                                                        en CyberCard!</p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="row">
+                                                                                                    <div class="col-6 d-flex justify-content-center">
+                                                                                                        <a class="btn border" data-bs-dismiss="modal" role="button"><p class="mb-0 text-black"><span><i class="fa-solid fa-pen-to-square" style="color: #ff0000;"></i></span> Verificar datos</p></a>
+                                                                                                    </div>
+                                                                                                    <div class="col-6 d-flex justify-content-center">
+                                                                                                        <a class="btn border" href="./confirmation_providers.html"  role="button"><p class="mb-0 text-black"><span><i class="fa-solid fa-check" style="color: #ff0000;"></i></span> Confirmar registro</p></a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -514,5 +608,11 @@
 </body>
 <script src="https://kit.fontawesome.com/12335c3d20.js" crossorigin="anonymous"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('image1').onchange = function () {
+        console.log(this.value);
+        document.getElementById('fichero').innerHTML = document.getElementById('image1').files[0].name;
+    }
+</script>
 
 </html>
