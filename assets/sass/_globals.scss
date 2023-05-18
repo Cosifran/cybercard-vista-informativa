@@ -25,7 +25,9 @@ body {
 .colorinput {
     color: $color-input;
 }
-
+.bgwhite{
+    background-color: #fff;
+}
 .bgmain {
     background-color: #F9F9F9;
 }
@@ -100,4 +102,8 @@ a {
     border: 2px dashed;
     border-color: #dee2e6;
     border-width: 2px;
+}
+
+.altodeseparador{
+   min-height: 2em; 
 }

@@ -8,12 +8,104 @@
     <title>index de la pagina</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
+
     <div class="container">
         <main>
             <section>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-11">
+                        <nav class="navbar navbar-expand-lg bg-body-white">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    <img src="/assets/image/logo.png" alt="Bootstrap" width="87" height="52">
+                                </a>
+                                <button class="navbar-toggler inputfoucus" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+        
+                                <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
+                                    aria-labelledby="offcanvasDarkNavbarLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                                        <button type="button" class="btn-close btn-close-black inputfoucus" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-end d-block d-lg-none">
+                                            <li class="nav-item">
+                                                <a class="nav-link active text-black" aria-current="page" href="#">Inicio</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-black" href="#">Viajes</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-black" href="#">Asistencias</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a  href="./providers.html" class="nav-link text-black" role="button">Vende en CyberCard</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="/cybercard-cybermarket/index.html" class="nav-link text-black" role="button">CyberMarket</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-black" href="#">Contáctanos</a>
+                                            </li>
+                                            <li style="width: 100%;">
+                                                <hr>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-black" href="#">
+                                                    <p class="mb-0"><span class="me-2"><i class="fa-solid fa-user"
+                                                                style="color: #3f3f3f;"></i></span>Iniciar sesión</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-end">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-black" aria-current="page" href="#">Inicio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#">Viajes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#">Asistencias</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="./providers.html">Vende en CyberCard</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="file:///C:/Users/ADMIN/Desktop/github/cybercard-cybermarket/index.html">CyberMarket</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#">Contáctanos</a>
+                                        </li>
+                                        <li>
+                                            <div class="vr altodeseparador"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-black" href="#">
+                                                <p class="mb-0"><span class="me-2"><i class="fa-solid fa-user"
+                                                            style="color: #3f3f3f;"></i></span>Iniciar sesión</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+        
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-11">
                         <div class="row">
@@ -29,7 +121,8 @@
                                 <img src="./assets/image/img-body.png" class="img-fluid" alt="imagen de promocion">
                             </div>
                             <div class="col-12 col-lg-6 col-xl-5 my-auto mx-auto">
-                                <h1 class="fw-bold mx-2 mx-lg-0 fontbig">¿Que es <span class="colorprimary">CyberCard?</span>
+                                <h1 class="fw-bold mx-2 mx-lg-0 fontbig">¿Que es <span
+                                        class="colorprimary">CyberCard?</span>
                                 </h1>
                                 <p class=" justifytext grissubtitulos fw-medium font-medium mx-2 mx-lg-0">
                                     Somos la mejor plataforma tecnológica de beneficios que se ha creado en todo el
@@ -45,108 +138,113 @@
                         </div>
 
                         <!-- beneficios de tu suscripcion + tarjetas -->
-                        <div class="row bgsecundario card border-0">
-
-                            <a href="" class="mt-5 position-absolute top-50 start-50 translate-middle">
-                                <i class="fa-solid fa-circle-chevron-left fs-3" style="color: #ff0000;"></i>
-                            </a>
-                            <a href="" class="mt-5 position-absolute top-50 start-50 translate-middle text-end">
-                                <i class="fa-solid fa-circle-chevron-right fs-3" style="color: #ff0000;"></i>
-                            </a>
-                            <div class="col-12 text-center py-3 pt-5">
+                        <div class="row py-4 bgmain bgsecundario px-xxl-4">
+                            <div class="col-12 text-center my-5 mb-4">
                                 <h3 class="fw-bold fontbig">Beneficios de tu suscripción</h3>
                                 <p class="fw-medium grissubtitulos fontsubtittel">
                                     Tu suscripción CyberCard te da acceso a productos y servicios de alta calidad con
                                     los mejores precios en una sola App.
                                 </p>
                             </div>
-                            <!-- slide #2 prototipo-->
-                            <div class="col-12 py-2 pb-5">
-                                <div class="row mx-xxl-4 mb-4">
-                                    <div class="col-3 d-flex">
-                                        <div class="card rounded-4 shadow-lg">
-                                            <img src="./assets/image/tarj-hoteles-cybercard.png" class="card-img-top"
-                                                alt="imagen hoteles cybercard">
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center fw-bold font-medium">Hoteles</h5>
-                                                <p class="card-text justifytext fontsnormalsmall pt-2">Toda la comodidad
-                                                    que
-                                                    necesita para tu
-                                                    viaje la
-                                                    encuentras
-                                                    en CyberCard, donde pondremos al alcance de tu mano los mejores
-                                                    hoteles y
-                                                    resorts alrededor del mundo con beneficios y <span
-                                                        class="fw-bold grissubtitulos">descuento
-                                                        exclusivos que van
-                                                        desde un 10 % hasta un 30% Dcto.</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-3 d-flex">
-                                        <div class="card rounded-4 shadow-lg">
-                                            <img src="./assets/image/tarj-assistencia-viajes.png" class="card-img-top"
-                                                alt="imagen asistencia viajes cybercard">
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center fw-bold font-medium">Asistencia de
-                                                    viajes</h5>
-                                                <p class="card-text justifytext fontsnormalsmall pt-2">Recorre el mundo
-                                                    tranquilo que en
-                                                    CyberCard
-                                                    cuidaremos de ti y de tu familia, garantizando el mejor seguro de
-                                                    viaje a
-                                                    nivel nacional e internacional con <span
-                                                        class="fw-bold grissubtitulos">descuentos
-                                                        preferenciales que van desde el 15% hasta el 30% Dcto.</span>
-                                                </p>
+                            <!-- carrusel de tarjetas -->
+                            <div class="col-12 ">
+                                <div class="swiper benificioTuSuscripcion">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide bgwhite">
+                                            <div class="card rounded-4 " style="height: 100%;">
+                                                <img src="./assets/image/tarj-hoteles-cybercard.png" class="card-img-top"
+                                                    alt="imagen hoteles cybercard">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center fw-bold font-medium">Hoteles</h5>
+                                                    <p class="card-text justifytext fontsnormalsmall pt-2">Toda la comodidad
+                                                        que
+                                                        necesita para tu
+                                                        viaje la
+                                                        encuentras
+                                                        en CyberCard, donde pondremos al alcance de tu mano los mejores
+                                                        hoteles y
+                                                        resorts alrededor del mundo con beneficios y <span
+                                                            class="fw-bold grissubtitulos">descuento
+                                                            exclusivos que van
+                                                            desde un 10 % hasta un 30% Dcto.</span></p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-3 d-flex ">
-                                        <div class="card rounded-4 shadow-lg">
-                                            <img src="./assets/image/tarj-turismo.png" class="card-img-top"
-                                                alt="imagen turismo cybercard">
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center fw-bold font-medium">Paquetes
-                                                    Turísticos</h5>
-                                                <p class="card-text justifytext fontsnormalsmall pt-2">Si quieres
-                                                    disfrutar
-                                                    de unas vacaciones
-                                                    perfectas en CyberCard te permitiremos explorar los mejores
-                                                    destinos,
-                                                    hoteles y tipo de alimentación con excelentes <span
-                                                        class="fw-bold grissubtitulos">descuentos que van desde un 10 %
-                                                        hasta un 25%
-                                                        Dcto.</span></p>
+                                        <div class="swiper-slide  border rounded-3">
+                                            <div class="card rounded-4 " style="height: 100%;">
+                                                <img src="./assets/image/tarj-assistencia-viajes.png" class="card-img-top" alt="imagen asistencia viajes cybercard">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center fw-bold font-medium">Asistencia de
+                                                        viajes</h5>
+                                                    <p class="card-text justifytext fontsnormalsmall pt-2">Recorre el mundo
+                                                        tranquilo que en
+                                                        CyberCard
+                                                        cuidaremos de ti y de tu familia, garantizando el mejor seguro de
+                                                        viaje a
+                                                        nivel nacional e internacional con <span class="fw-bold grissubtitulos">descuentos
+                                                            preferenciales que van desde el 15% hasta el 30% Dcto.</span>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="col-3">
-                                        <div class="card rounded-4 shadow-lg">
-                                            <img src="./assets/image/tarj-beneficios-turistico.png" class="card-img-top"
-                                                alt="cybercard paquete turistico">
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center fw-bold font-medium">CyberMarket
-                                                </h5>
-                                                <p class="card-text justifytext fontsnormalsmall">Es un servicio pensado
-                                                    para aquellas
-                                                    personas
-                                                    que les encanta disfrutar de las compras desde la comodidad de su
-                                                    casa, en
-                                                    CyberMarket eliminamos la intermediación y permitimos que nuestros
-                                                    suscriptores compren directamente a los fabricante con <span
-                                                        class="fw-bold grissubtitulos">descuentos desde un 15% hasta un
-                                                        50%
-                                                        Dcto.</span></p>
+                                        
+                                        <div class="swiper-slide border  rounded-3">
+                                            <div class="card rounded-4 " style="height: 100%;">
+                                                <img src="./assets/image/tarj-turismo.png" class="card-img-top" alt="imagen turismo cybercard">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center fw-bold font-medium">Paquetes
+                                                        Turísticos</h5>
+                                                    <p class="card-text justifytext fontsnormalsmall pt-2">Si quieres
+                                                        disfrutar
+                                                        de unas vacaciones
+                                                        perfectas en CyberCard te permitiremos explorar los mejores
+                                                        destinos,
+                                                        hoteles y tipo de alimentación con excelentes <span class="fw-bold grissubtitulos">descuentos que van desde un 10 %
+                                                            hasta un 25%
+                                                            Dcto.</span></p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="swiper-slide border rounded-3">
+                                            <div class="card rounded-4 " style="height: 100%;">
+                                                <img src="./assets/image/tarj-beneficios-turistico.png" class="card-img-top" alt="cybercard paquete turistico">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center fw-bold font-medium">CyberMarket
+                                                    </h5>
+                                                    <p class="card-text justifytext fontsnormalsmall">Es un servicio pensado
+                                                        para aquellas
+                                                        personas
+                                                        que les encanta disfrutar de las compras desde la comodidad de su
+                                                        casa, en
+                                                        CyberMarket eliminamos la intermediación y permitimos que nuestros
+                                                        suscriptores compren directamente a los fabricante con <span class="fw-bold grissubtitulos">descuentos desde un 15% hasta un
+                                                            50%
+                                                            Dcto.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide border rounded-3">
+                                            <div class="card border-0">
+                                                <img src="..." class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <hr>
+                                                    <h5 class="card-text fontverysmall fw-bold">REPORTES AVANZADOS</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">Slide 6</div>
+                                        <div class="swiper-slide">Slide 7</div>
+                                        <div class="swiper-slide">Slide 8</div>
+                                        <div class="swiper-slide">Slide 9</div>
                                     </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
                         </div>
+
 
                         <!-- Elige tu plan -->
                         <div class="row py-5 bgmain">
@@ -346,7 +444,8 @@
                                                         <a data-bs-toggle="collapse" href="#collapseExample"
                                                             role="button" aria-expanded="false"
                                                             aria-controls="collapseExample">
-                                                            <p class="fw-bold my-auto text-black fontsnormalsmall">¿DESPUES
+                                                            <p class="fw-bold my-auto text-black fontsnormalsmall">
+                                                                ¿DESPUES
                                                                 DE AQURIR MI
                                                                 SUSCRIPCIÓN CYBERCARD EN CUANTO
                                                                 TIEMO LA PUEDO USAR?
@@ -383,8 +482,7 @@
                                                     <div class="col-11 pe-2">
                                                         <a data-bs-toggle="collapse" href="#tarjeta-2" role="button"
                                                             aria-expanded="false" aria-controls="tarjeta-2">
-                                                            <p
-                                                                class="fw-bold my-auto text-black pe-4 fontsnormalsmall">
+                                                            <p class="fw-bold my-auto text-black pe-4 fontsnormalsmall">
                                                                 ¿EN QUE MOMENTO
                                                                 PUEDO CANCELAR MI SUSCRIPCIÓN
                                                                 CYBERCARD?</p>
@@ -672,6 +770,8 @@
 </body>
 <script src="https://kit.fontawesome.com/12335c3d20.js" crossorigin="anonymous"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./assets/js/app.js"></script>
 
 
 
