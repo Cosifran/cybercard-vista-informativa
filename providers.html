@@ -17,7 +17,7 @@
         <main>
             <section>
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-11">
+                    <div class="col-12 col-lg-12">
                         <nav class="navbar navbar-expand-lg bg-body-white">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="#">
@@ -39,10 +39,10 @@
                                     <div class="offcanvas-body">
                                         <ul class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-end d-block d-lg-none">
                                             <li class="nav-item">
-                                                <a class="nav-link active text-black" aria-current="page" href="./index.htm">Inicio</a>
+                                                <a class="nav-link active text-black" aria-current="page" href="#">Inicio</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link text-black" href="#">Viajes</a>
+                                                <a class="nav-link text-black" href="https://reservas.cybercard.com.co/">Viajes</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link text-black" href="#">Asistencias</a>
@@ -51,7 +51,7 @@
                                                 <a  href="./providers.html" class="nav-link text-black" role="button">Vende en CyberCard</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="http://127.0.0.1:5501/index.html?#" class="nav-link text-black" role="button">CyberMarket</a>
+                                                <a href="/cybercard-cybermarket/index.html" class="nav-link text-black" role="button">CyberMarket</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link text-black" href="#">Contáctanos</a>
@@ -72,30 +72,28 @@
                                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                                     <ul class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-end">
                                         <li class="nav-item">
-                                            <a class="nav-link active text-black" aria-current="page" href="./index.htm">Inicio</a>
+                                            <a class="nav-link active text-black fontnavsize focusnav" aria-current="page" href="#">Inicio</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-black" href="#">Viajes</a>
+                                            <a class="nav-link text-black fontnavsize focusnav" href="https://reservas.cybercard.com.co/">Viajes</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-black" href="#">Asistencias</a>
+                                            <a class="nav-link text-black fontnavsize focusnav" href="http://127.0.0.1:5502/index.html">CyberMarket</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-black" href="./providers.html">Vende en CyberCard</a>
+                                            <a class="nav-link text-black fontnavsize focusnav" href="./providers.html">Vende en CyberCard</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-black" href="http://127.0.0.1:5501/index.html?#">CyberMarket</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-black" href="#">Contáctanos</a>
+                                            <a class="nav-link text-black fontnavsize" href="#">
+                                                <span class="focusnav"> Contáctanos</span>
+                                            </a>
                                         </li>
                                         <li>
                                             <div class="vr altodeseparador"></div>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-black" href="#">
-                                                <p class="mb-0"><span class="me-2"><i class="fa-solid fa-user"
-                                                            style="color: #3f3f3f;"></i></span>Iniciar sesión</p>
+                                                <p class="mb-0 colorprimary"><span class="me-2"><i class="fa-solid fa-user"></i></span>Iniciar sesión</p>
                                             </a>
                                         </li>
                                     </ul>
@@ -155,7 +153,7 @@
                             </div>
     
                             <!-- carrusel de tarjetas -->
-                            <div class="col-12 px-5">
+                            <div class="col-12 px-md-5">
                                 <div class="swiper mySwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -168,48 +166,76 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide border rounded-3">
-                                            <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">ADMINISTRA Y GESTIONA TUS
-                                                        CLIENTES</h5>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-administra.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">ADMINISTRA Y GESTIONA TUS CLIENTES
+                                                    </h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide border rounded-3">
-                                            <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">COMICIONES COMPTETITIVAS PARA
-                                                        CADA PRODUCTO</h5>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-comisiones.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">COMICIONES COMPTETITIVAS PARA CADA PRODUCTO
+                                                    </h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide border rounded-3">
-                                            <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">PAGOS CONSTANTES</h5>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-pconstantes.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">PAGOS CONSTANTES
+                                                    </h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide border rounded-3">
-                                            <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">REPORTES AVANZADOS</h5>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-ravanzados.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">REPORTES AVANZADOS
+                                                    </h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">Slide 6</div>
-                                        <div class="swiper-slide">Slide 7</div>
-                                        <div class="swiper-slide">Slide 8</div>
-                                        <div class="swiper-slide">Slide 9</div>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-stecnico.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">SOPORTE TECNICO SIEMPRE QUE LO NECESITES
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-sdivisa.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">SELECCIÓN DE DIVISA
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card  rounded-5 border">
+                                                <img src="./assets/image/img-pfraude.png" class="card-img-top" alt="...">
+                                                <div class="card-body pt-0">
+                                                    <hr class="mt-0">
+                                                    <h5 class="card-text fontverysmall fw-bold">PROTECCION CONTRA FRAUDES
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>
@@ -224,8 +250,8 @@
                                     alt="imagen de promocion">
                             </div>
                             <div class="col-12 col-lg-6 col-xl-6 my-auto mx-auto">
-                                <h1 class="fw-bold mx-2 mx-lg-0 pe-5 fontbig pb-3">¿Que necesito para vender
-                                    En CyberCard?</h1>
+                                <h1 class="fw-bold mx-md-2 mx-lg-0 pe-md-5 fontbig pb-3">¿Que necesito para vender
+                                    en CyberCard?</h1>
                                 <p class=" justifytext grissubtitulos fw-medium font-medium mx-2 mx-lg-0">
                                     En CyberCard damos la bienvenida aquellas empresas con compromiso de calidad y
                                     servicio en sus productos.
@@ -544,61 +570,36 @@
                             </div>
     
                             <!-- carrusel de tarjetas -->
-                            <div class="col-12 px-5">
+                            <div class="col-12 px-md-5">
                                 <div class="swiper mySwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide border rounded-3">
                                             <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">TUS PRODUCTOS ANTE EL MUNDO 24/7
-                                                    </h5>
-                                                </div>
+                                                <img src="./assets/image/comercios-vinculados.png" class="img-fluid" alt="...">
                                             </div>
                                         </div>
                                         <div class="swiper-slide border rounded-3">
                                             <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">ADMINISTRA Y GESTIONA TUS
-                                                        CLIENTES</h5>
-                                                </div>
+                                                <img src="./assets/image/comercios-vinculados.png" class="img-fluid" alt="...">
                                             </div>
                                         </div>
                                         <div class="swiper-slide border rounded-3">
                                             <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">COMICIONES COMPTETITIVAS PARA
-                                                        CADA PRODUCTO</h5>
-                                                </div>
+                                                <img src="./assets/image/comercios-vinculados.png" class="img-fluid" alt="...">
                                             </div>
                                         </div>
                                         <div class="swiper-slide border rounded-3">
                                             <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">PAGOS CONSTANTES</h5>
-                                                </div>
+                                                <img src="./assets/image/comercios-vinculados.png" class="img-fluid" alt="...">
                                             </div>
                                         </div>
                                         <div class="swiper-slide border rounded-3">
                                             <div class="card border-0">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <hr>
-                                                    <h5 class="card-text fontverysmall fw-bold">REPORTES AVANZADOS</h5>
-                                                </div>
+                                                <img src="./assets/image/comercios-vinculados.png" class="img-fluid" alt="...">
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">Slide 6</div>
-                                        <div class="swiper-slide">Slide 7</div>
-                                        <div class="swiper-slide">Slide 8</div>
-                                        <div class="swiper-slide">Slide 9</div>
+                                        
+                                        
                                     </div>
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>

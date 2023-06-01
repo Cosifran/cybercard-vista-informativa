@@ -7,6 +7,7 @@ $color-sec: #EEEEEE;
 $bacgraund-main: #F9F9F9;
 $color-gris: #787878;
 $color-secun-gris: #6F6F6F;
+$font-nav: 0.938rem;
 $fon-7: 0.75rem;
 $font-6: 0.625rem;
 $fon-5: 0.875rem;
@@ -87,6 +88,10 @@ a {
 
 .fontbig{
     font-size: $fon-2;
+}
+
+.fontnavsize{
+    font-size: $font-nav;
 }
 
 .t-fs-g {

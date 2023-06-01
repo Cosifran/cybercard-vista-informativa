@@ -76,6 +76,10 @@ a {
   font-size: 2.375rem;
 }
 
+.fontnavsize {
+  font-size: 0.938rem;
+}
+
 .t-fs-g {
   font-size: 4rem;
 }
@@ -115,6 +119,22 @@ html,
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, -1px) !important;
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px)) !important;
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: hsl(0, 100%, 50%) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 
 .swiper-button-prev {
@@ -169,6 +189,12 @@ html,
 .my-custom-select span {
   border-radius: 0.4rem;
   background-color: #E0E0E0;
+}
+
+.focusnav:hover {
+  text-decoration: underline !important;
+  color: #FF0000 !important;
+  font-weight: 700;
 }
 
 /* Esto no es necesesario y puede borrarse */

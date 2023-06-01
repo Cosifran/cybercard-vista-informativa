@@ -24,9 +24,9 @@ navigation: {
 var swiper = new Swiper(".benificioTuSuscripcion", {
   slidesPerView: 1,
   spaceBetween: 10,
-navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
   breakpoints: {
     640: {
@@ -39,7 +39,7 @@ navigation: {
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
   },
 });
